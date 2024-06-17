@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-require('dotenv').config()
+const mongoose = require("mongoose");
+require("dotenv").config();
 const URI = process.env.URI;
 
 const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
