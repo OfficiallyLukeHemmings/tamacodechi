@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
-const connectDB = require("./db")
+const connectDB = require("./db");
 const projectRoute = require("./routes/projectRoute");
 
 const app = express();
@@ -21,4 +21,4 @@ app.use(projectRoute);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-})
+});
