@@ -1,5 +1,12 @@
+import ProjectsTable from "../components/projectsTable";
+
 function Root() {
-  return ( <p>Hello, world!</p> );
+  return (
+    <>
+      <header>Tamacodechi</header>
+      <ProjectsTable />
+    </>
+  );
 }
 
 export default Root;

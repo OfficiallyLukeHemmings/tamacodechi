@@ -1,0 +1,66 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    background-color: #FAFAFA;
+}
+  
+header {
+    flex: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 16px 0px;
+    position: sticky;
+    color: #EAA13B;
+}
+
+/* Project Table */
+#projects-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 24px
+}
+
+/* removing li styling */
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-card {
+    max-width: 320px;
+    max-height: 680px;
+    background-color: #EAA13B;
+    margin: 8px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 6px 4px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+.project-card:hover {
+    background-color:#FFB041;
+}
+
+.project-title {
+    font-weight: bold;
+    margin: 16px 16px 24px;
+}
+
+.project-desc {
+    margin: 16px;
+}
+
+.project-completion {
+    font-size: 2rem;
+    margin: 0 28px 16px 0;
+    opacity: 0.82;
+    text-align: right;
+}
