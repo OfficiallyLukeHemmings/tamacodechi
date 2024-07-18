@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectsTable from "../components/projectsTable";
 
 function Root() {
@@ -5,6 +6,7 @@ function Root() {
     <>
       <header>Tamacodechi</header>
       <ProjectsTable />
+      <Link to="/add" id="add-project-button">Add Project</Link>
     </>
   );
 }

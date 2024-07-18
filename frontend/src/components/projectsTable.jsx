@@ -4,7 +4,6 @@ function ProjectsTable() {
   const url = "http://localhost:5000";
 
   const [projects, setProjects] = useState([]);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
     updateProjects();
@@ -14,7 +13,7 @@ function ProjectsTable() {
     fetch(`${url}/projects`)
       .then(res => res.json())
       .then(data => setProjects(data))
-      .catch(error => setError(error));
+      .catch(error => console.log(error));
   }
 
   return (
