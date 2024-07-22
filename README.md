@@ -11,4 +11,4 @@ Tamacodechi is a refresher project for managing coding projects. Focusing on emp
 - **React Router**: Used for managing navigation and routing within the single-page application, enhancing user experience.
   
 ## Demo (Coming Soon)
-As this is just a refresher project, I will not be hosting this one as a demo, but will instead provide a link to a demonstration video to show the functionality once the project is complete.
+As this is just a refresher project, I will not be hosting this one as a demo, but will instead provide a link to a demonstration video to showcase the project once complete.
