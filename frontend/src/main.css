@@ -35,7 +35,7 @@ li {
 }
 
 .project-card {
-    max-width: 320px;
+    width: 320px;
     height: 200px;
     background-color: #EAA13B;
     margin: 8px;
@@ -68,14 +68,20 @@ li {
 #add-project-button {
     position: absolute;
     bottom: 16px;
-    right: 24px;
+    right: 32px;
     height: 42px;
-    width: 100px;
+    width: 140px;
     text-align: center;
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
     color: #EAA13B;
+}
+/* Larger font size for 768px+ */
+@media only screen and (min-width: 768px) {
+    #add-project-button {
+        font-size: 1.5rem;
+    }
 }
 #add-project-button:hover {
     color: #FFB041;
@@ -84,17 +90,44 @@ li {
 #project-create-form {
     margin: auto 5%;
     text-align: center;
+    display: grid;
 }
 
-#project-create-form label{
-    display: inline-block;
-    width: 120px;
-    margin-right: 12px;
-    text-align: left
+#project-create-form label {
+    text-align: left;
 }
 
-#project-create-form input {
-    width: 80%;
+#project-create-form input, #project-create-form textarea {
     margin-bottom: 18px;
     text-align: left;
+    height: 25px;
+}
+
+#project-create-form textarea {
+    resize: none;
+    height: 30vh;
+}
+
+#checkbox-input {
+    width: 25px;
+}
+
+.submit-button {
+    display: flex;
+    width: 240px;
+    height: 50px;
+    margin: auto;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EAA13B;
+}
+.submit-button:hover {
+    color: #FFB041;
 }

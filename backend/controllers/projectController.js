@@ -6,10 +6,12 @@ const getProjects = async (req, res) => {
 }
 
 const createProject = (req, res) => {
+  
   const project = new Project({
     title: req.body.title,
     desc: req.body.desc,
     link: req.body.link,
+    complete: req.body.complete
   });
 
   project.save();

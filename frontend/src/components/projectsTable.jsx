@@ -20,7 +20,7 @@ function ProjectsTable() {
     <div id="projects-table">
       { projects.map(project => (
         <li className="project-card" key={ project.id }>
-          <p className="project-title">TITLE: { project.title + project.title + project.title + project.title + project.title + project.title }</p>
+          <p className="project-title">{ project.title }</p>
           <p className="project-desc"> { project.desc }</p>
           { project.complete && <p className="project-completion">✅</p> }
         </li>
